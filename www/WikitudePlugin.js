@@ -10,7 +10,7 @@
 		 *  You can obtain a free trial key at http =//www.wikitude.com/developer/licenses .
 		 */
 
-		this._sdkKey = "1agmZY1XXcfthYBS+Wb1qWhfonNYE2ATWpFDfNbbL9rBtokSHfQbvKtr+TBrplV5PPoIR0nU0YFvCbmmkQcBoDjbvmwrbWWwkri1RfIvS+MiZiteOtxaWEtg2KXxHO+DOTYK6//zQVC1/rkuvnDVqBCMYDqFqkb8V/mH4IalNA1TYWx0ZWRfXzq2cIt+Gfdj5K/3P29AQ7fiwoa36os7oDY350edLATy10l/41P8vHP2RXh6Kck/s47kZQi3BA7du49oLT2IclyXX3j4k8gN/YT5YzuRL6/ip2mkFd9ltiRXXFge6Pl62rViR3AGBNv5+2DiDmef/SF6MRC4AG8G3ohIMnkq1zO1xHQe3xHzX/+mvqArgra5UHv2ckPhf/3M1Hr+U9+3JWN4/GXdJ7KzTU1oOqT4GLVTAFv9KL4CNLl2yIeH/of3WM6wIJwCGgIE+NvRFDMsi4aI5QCTxxVSbOSS6HfmRyOPqx7NRumjPsNziFPKbx7qDne/1nwICcNtpXBFSEDisKZA/ds/PzooOhDtET9n7gC7UerFhWky3aibBzX8iD+MBlW8ik59PkIS1khguHIdhtYutNvxjSq6dk1yd3Cj/tZpEfznK4PUw55+HHISK2jFs2youAkypydyR6jpgEUqcCzRXlIEkOtNG6eruKUaO2MCaxiGLDeVAcxtWVGj4b8UGQc9n9zF0bzs/VF8ljtnYCny/4jFyhJqtg==";
+		this._sdkKey = "";
 		/**
 		 *  The Wikitude SDK can run in different modes.
 		 *      * Geo means, that objects are placed at latitude/longitude positions.
@@ -92,7 +92,7 @@
 	WikitudePlugin.prototype.loadARchitectWorld = function(successCallback, errorCallback, architectWorldPath, requiredFeatures, startupConfiguration, sdkKey) {
 
 		cordova.exec(successCallback, errorCallback, "WikitudePlugin", "open", [{
-			"SDKKey": this._sdkKey,
+			"SDKKey": sdkKey,
 			"ARchitectWorldURL": architectWorldPath,
 			"RequiredFeatures": requiredFeatures,
 		    "StartupConfiguration" : startupConfiguration
