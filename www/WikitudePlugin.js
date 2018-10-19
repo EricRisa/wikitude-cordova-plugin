@@ -36,6 +36,10 @@
         this.CameraFocusRangeNone = 0;
         this.CameraFocusRangeNear = 1;
         this.CameraFocusRangeFar  = 2;
+		
+	this.setSKDkey = function(sdkkey) {	
+		this._sdkKey = sdkkey;
+		}
 	};
 
 
