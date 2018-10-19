@@ -36,10 +36,7 @@
         this.CameraFocusRangeNone = 0;
         this.CameraFocusRangeNear = 1;
         this.CameraFocusRangeFar  = 2;
-		
-	this.prototype.setSKDkey = function(sdkkey) {	
-		this._sdkKey = sdkkey;
-		}
+
 	};
 
 
@@ -50,7 +47,10 @@
 	 *
 	 *	=============================================================================================================================
 	 */
-
+		
+	WikitudePlugin.prototype.setSKDkey = function(sdkkey) {	
+		WikitudePlugin._sdkKey = sdkkey;
+	}
 	/* Managing ARchitect world loading */
 
 	/**
