@@ -37,7 +37,7 @@
         this.CameraFocusRangeNear = 1;
         this.CameraFocusRangeFar  = 2;
 		
-	this.setSKDkey = function(sdkkey) {	
+	this.prototype.setSKDkey = function(sdkkey) {	
 		this._sdkKey = sdkkey;
 		}
 	};
